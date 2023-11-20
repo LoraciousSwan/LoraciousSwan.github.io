@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ANIMATIONS LINK -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- AOS LINK  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- FAVICON -->
+    <link rel="shortcut icon" type="image/jpeg" href="https://i.imgur.com/KSIauKC_d.webp?maxwidth=760&fidelity=grand" />
+    <!-- FONTS FAMILY LINKS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- CSS LINKS -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responsive.css" />
+
+    <title>Cassidy Camp | Front-End Developer</title>
+  </head>
+  <body onload="myFunc()">
+    
+     <!-- PreLoader -->
+<!--     <div id="loader"></div> -->
+    
+    <!-------------------- NAVBAR ------------->
+    <nav>
+      <div class="logo" onclick="scrollFunc()">
+        <h3>< CASSIDY<span>CAMP /></span></h3>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+
+      <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+
+    <!---------------- HOME SECTION -------------->
+    <section class="home" id="home">
+      <div class="heading">
+        <span style="color: #0d655d">Cassidy </span>Camp
+      </div>
+      <div class="content">
+        💻 Front End-Developer
+      </div>
+    </section>
+
+    <!----------- ABOUT SECTION ----------->
+    <section class="about" id="about">
+      <div class="content">
+        <div
+          class="about-me-heading"
+          data-aos="fade-down"
+        >
+          <h1>About <span style="color: teal">Me</span></h1>
+        </div>
+        <div
+          class="info"
+          data-aos="zoom-in"
+        >
+          Hello, I am Cassidy Camp, I am a dynamic coder.
+          I am Proficient in HTML/CSS/JS, Bootstrap, React and C++, I stand out with a comprehensive skill set that extends beyond conventional choices. 
+          I understands the importance of variety and have actively pursued learning new languages.
+        </div>
+      </div>
+    </section>
+
+    <!-------------- SKILLS SECTION ------------- -->
+    <section class="skills" id="skills">
+      <div
+        class="heading"
+        data-aos="fade-right"
+      >
+        <h1>MY <span style="color: #0d655d">SKILLS</span></h1>
+      </div>
+      <div class="skill-images">
+        <img src="images/HTML.png" alt="" data-aos="flip-left">
+        <img src="images/CSS.png" alt="" data-aos="flip-left">
+        <img src="images/jas.png" alt="" data-aos="flip-left">
+        <img src="images/ISO_C++_Logo.svg" alt="" data-aos="flip-left">
+        <img src="images//Bootstrap.jfif" alt="" data-aos="flip-left">
+        <img src="images/React.png" alt="" data-aos="flip-left">
+      </div>
+
+    </section>
+
+    <!-- HEAIDNG -->
+    <!--   -->
+    <!-- IMAGE -->
+    <!--  -->
+
+    <!------- CONTACT SECTION ----- -->
+    <section class="contact" id="contact">
+      <div
+        class="contact-heading"
+        data-aos="fade-down"
+      >
+        <h1>CON<span style="color: teal">TACT</span></h1>
+      </div>
+      <div
+        class="info"
+        data-aos="fade-up"
+      >
+        For more details, kindly contact me on -
+      </div>
+      <div class="social-media" data-aos="fade-down">
+        <a
+          href="https://www.linkedin.com/in/cassidy-camp-322984296/"
+          rel="noopener"
+          target="_blank"
+          ><i class="fa fa fa-linkedin" aria-hidden="true"></i
+        ></a>
+        <a href="https://github.com/Cakedadev" rel="noopener" target="_blank"
+          ><i class="fa fa fa-github" aria-hidden="true"></i
+        ></a>
+      </div>
+    </section>
+
+    <!--------- FOOTER SECTION ------------>
+    <section class="footer">
+      <p data-aos="fade-out">
+        Designed with <i class="fa fa-heart pulse"></i> by Vansh Chitlangia.
+      </p>
+    </section>
+
+    <!------------------ AOS SCRIPT ----------->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        delay:0,
+      });
+    </script>
+
+    <!-- JS LINK -->
+    <script src="app.js"></script>
+  </body>
+</html>
