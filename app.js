@@ -19,7 +19,7 @@ const navSlide = () => {
 // Wait for DOMContentLoaded event before initializing AOS
 document.addEventListener("DOMContentLoaded", () => {
   AOS.init();
-  navSlide();
+  navSlide(); 
 });
 
 
