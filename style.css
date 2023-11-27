@@ -238,7 +238,9 @@ nav{
 .social-media .fa-github:hover{
   color:yellowgreen;
 }
-
+.social-media .fa-email:hover{
+  color:yellowgreen;
+}
 /*------------- FOOTER SECTION -------- */
 .footer{
   height: 35px;
