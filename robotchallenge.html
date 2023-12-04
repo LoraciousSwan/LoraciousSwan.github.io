@@ -7,16 +7,15 @@
             // is same or not. 
             function checkPassword(form) { 
                 password1 = form.password1.value; 
-                password2 = form.password2.value; 
   
                 // If password not entered 
-                if (password1 == '') 
+                if (password1 == 'cassidyctf{u249wdf53}') 
                     alert ("Congrats"); 
                     alert("CTF Found!") 
                     return true; 
                 else if (password1 != 'cassidyctf{u249wdf53}') 
                     alert ("Incorrect"); 
-  
+                    return false;
                 // If same return True. 
                 else{ 
                     
