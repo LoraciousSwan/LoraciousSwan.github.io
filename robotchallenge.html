@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html> 
+    <head> 
+        <script> 
+          
+            // Function to check Whether both passwords 
+            // is same or not. 
+            function checkPassword(form) { 
+                password1 = form.password1.value; 
+                password2 = form.password2.value; 
+  
+                // If password not entered 
+                if (password1 == '') 
+                    alert ("Congrats"); 
+                    alert("CTF Found!") 
+                    return true; 
+                else if (password1 != 'cassidyctf{u249wdf53}') 
+                    alert ("Incorrect"); 
+  
+                // If same return True. 
+                else{ 
+                    
+                } 
+            } 
+        </script> 
+        <style> 
+            .gfg { 
+                font-size:40px; 
+                color:green; 
+                font-weight:bold; 
+                text-align:center; 
+            } 
+            .geeks { 
+                font-size:17px; 
+                text-align:center; 
+                margin-bottom:20px; 
+            } 
+        </style>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+    </head> 
+    <body> 
+        <div class = "gfg">CTF Challenge</div> 
+        <div class = "geeks">A Small Challenge Created By Cassidy</div> 
+        <form onSubmit = "return checkPassword(this)"> 
+        <table border = 1 align = "center"> 
+            <tr> 
+                <!-- Enter Username -->
+                <td>Username:</td> 
+                <td><input type = text name = name size = 25</td> 
+            </tr> 
+            <tr> 
+                <!-- Enter Password. -->
+                <td>Password:</td> 
+                <td><input type = password name = password1 size = 25</td> 
+            </tr> 
+            <tr> 
+                <td colspan = 2 align = right> 
+                <input type = submit value = "Submit"></td> 
+            </tr> 
+        </table> 
+        </form> 
+    </body> 
+</html>                     
