@@ -1,13 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discord Webhook Deleter</title>
-  </head>
-  <body>
-    <div id="app" v-bind:style="{ backgroundColor: color }"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
-</html>
+<HTMl>
+    <head>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>WebHook Deleter</title>
+      <input type="url" name = "deleteurl" id="deleteurl">
+      <button onclick="deletewebhook()">Delete Webhook</button>
+    <script>
+          function deletewebhook() {
+            console.log(document.getElementsByName('deleteurl'))
+            var deleteurl = document.getElementById("deleteurl").value;
+            $.ajax({
+              type: "DELETE",
+              url: deleteurl,
+            });
+          }
+    </script>
+</HTMl>
